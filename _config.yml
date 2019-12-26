@@ -1,0 +1,66 @@
+# # # # # # # # # # # # #
+#   K i k o - p l u s   #
+# # # # # # # # # # # # #
+
+# Basic
+name:               "写意人生"
+
+
+copyright:
+  year:             2019
+  name:             Lion Wen
+
+
+
+# URL
+url:                "https://blog.ccco.ga" # the base hostname & protocol for your site
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Shanghai
+permalink:          /:year-:month-:day/:title/
+
+# Pagination
+paginate:           10
+paginate_path:      /page:num/
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  input:            GFM
+
+# Navigation
+nav:
+  - name:           "关于"
+    url:            "/about"
+# If you need to add some tage add at here !!!
+
+  
+
+# Sass
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-admin
+
+exclude:            [vendor]
